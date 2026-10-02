@@ -117,9 +117,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.03);
         }
         
-        .welcome-content {
-            flex: 1;
-        }
+        .welcome-content { flex: 1; }
         
         .welcome-tag {
             font-size: 10px;
@@ -240,9 +238,7 @@
             flex-shrink: 0;
         }
         
-        .item-content {
-            flex: 1;
-        }
+        .item-content { flex: 1; }
         
         .item-title {
             font-size: 13px;
@@ -328,7 +324,7 @@
     <h1>User Manual</h1>
     <div class="search-bar">
         <span>🔍</span>
-        <input type="text" id="searchInput" placeholder="Search guides, checkout, payment proof..." oninput="handleSearch()">
+        <input type="text" id="searchInput" placeholder="Search guides, cart, payment..." oninput="handleSearch()">
     </div>
 </div>
 
@@ -345,21 +341,24 @@
 <!-- Container -->
 <div class="container">
 
+    <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- BUYER GUIDE -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
     <div id="buyerContent">
         <div class="welcome">
             <div class="welcome-content">
-                <div class="welcome-tag">BRUNEI SHOPPER PATH</div>
-                <div class="welcome-title">Simple, Transparent &amp; Local</div>
-                <div class="welcome-subtitle">Shop verified vendors across all four Brunei districts with seamless manual bank transfer validation.</div>
+                <div class="welcome-tag">BUYER GUIDE</div>
+                <div class="welcome-title">Shop Local, Shop Easy</div>
+                <div class="welcome-subtitle">Browse local sellers, add to cart, and pay with Cash on Delivery or Bank Transfer.</div>
             </div>
             <div class="welcome-icon">🛍️</div>
         </div>
 
+        <!-- Section 1: Account Setup -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">👤</div>
-                <div class="section-title">1. Account &amp; Profile Setup</div>
+                <div class="section-title">1. Account Setup</div>
                 <div class="section-chevron">▼</div>
             </div>
             <div class="section-body">
@@ -367,27 +366,52 @@
                     <div class="item">
                         <div class="item-number">1</div>
                         <div class="item-content">
-                            <div class="item-title">Brunei Mobile Verification</div>
-                            <div class="item-text">Enter your active +673 mobile (+6/3/8) or email.</div>
-                            <div class="item-text">LocoMart delivers a swift SMS verification PIN to ensure secure buyer identity.</div>
+                            <div class="item-title">Creating an Account</div>
+                            <div class="item-text">Open the LocoMart app.</div>
+                            <div class="item-text">Tap "Sign In" or "Create Account".</div>
+                            <div class="item-text">Enter your full name, email, password, and phone number (optional).</div>
+                            <div class="item-text">Accept the Terms &amp; Conditions and Privacy Policy.</div>
+                            <div class="item-text">Tap "Create Account".</div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-number">2</div>
                         <div class="item-content">
-                            <div class="item-title">Set Default Kampung &amp; District</div>
-                            <div class="item-text">Head to Settings → Delivery Addresses.</div>
-                            <div class="item-text">Pre-select your primary district (Brunei-Muara, Tutong, Belait, or Temburong) plus house number and Simpang for accurate runner rates.</div>
+                            <div class="item-title">Verifying Your Email</div>
+                            <div class="item-text">After signing up, check your email inbox.</div>
+                            <div class="item-text">Click the verification link in the email.</div>
+                            <div class="item-text">Return to the app and tap "I've Verified / Refresh".</div>
+                            <div class="item-text">Check your spam folder if you don't see the email.</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
+                            <div class="item-title">Signing In</div>
+                            <div class="item-text">Open the app and tap "Sign In".</div>
+                            <div class="item-text">Enter your email and password.</div>
+                            <div class="item-text">Tap "Sign In".</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">4</div>
+                        <div class="item-content">
+                            <div class="item-title">Forgot Password</div>
+                            <div class="item-text">On the Sign In screen, tap "Forgot Password?".</div>
+                            <div class="item-text">Enter your registered email.</div>
+                            <div class="item-text">Check your inbox for the reset link.</div>
+                            <div class="item-text">Follow the link to create a new password.</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Section 2: Browsing Products -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">🔍</div>
-                <div class="section-title">2. Browsing &amp; Smart Search</div>
+                <div class="section-title">2. Browsing Products</div>
                 <div class="section-chevron">▼</div>
             </div>
             <div class="section-body">
@@ -395,32 +419,54 @@
                     <div class="item">
                         <div class="item-number">1</div>
                         <div class="item-content">
-                            <div class="item-title">District-Specific Browsing</div>
-                            <div class="item-text">Filter sellers by nearby proximity to minimize dispatch runner fees and pickup wait times.</div>
+                            <div class="item-title">Homepage</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Promo carousel at the top with announcements</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Main categories below the carousel</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Product grid under "For You"</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Tap "Load More" at the bottom for more products</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Pull down to refresh the product list</div></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-number">2</div>
                         <div class="item-content">
-                            <div class="item-title">MSME &amp; Halal Badges</div>
-                            <div class="item-text">Look for the certified Brunei local producer icon to support homegrown enterprises and verified quality standards.</div>
+                            <div class="item-title">Browsing Categories</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Tap a category card on the homepage</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Or tap "Categories → See All" for the full list</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Categories include: F&amp;B, Clothing, Accessories, Beauty, Electronics, Shoes, Furniture, Sports, Books, Toys, Services, and Other</div></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-number">3</div>
                         <div class="item-content">
-                            <div class="item-title">Wishlist &amp; Favorites</div>
-                            <div class="item-text">Tap the ♡ icon on any item card to bookmark it for later purchase or flash discount notifications.</div>
+                            <div class="item-title">Searching for Products</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Tap the search bar at the top</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Type keywords like "shoes" or "Nike"</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Filter by category</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Sort by Newest, Price Low to High, or Price High to Low</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Toggle "In Stock Only" to hide sold-out items</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">4</div>
+                        <div class="item-content">
+                            <div class="item-title">Product Details</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Tap any product to view full details</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Swipe images to see all product photos</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">View seller store information</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Check stock availability</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Tap the store name to visit their store page</div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Section 3: Shopping Cart -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">🛒</div>
-                <div class="section-title">3. Cart &amp; Multi-Seller Orders</div>
+                <div class="section-title">3. Shopping Cart</div>
                 <div class="section-chevron">▼</div>
             </div>
             <div class="section-body">
@@ -428,29 +474,37 @@
                     <div class="item">
                         <div class="item-number">1</div>
                         <div class="item-content">
-                            <div class="item-title">Grouped by Seller</div>
-                            <div class="item-text">Items from different sellers appear in separate groups in your cart.</div>
-                            <div class="item-text">Each group is checked out independently.</div>
+                            <div class="item-title">Adding to Cart</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Tap "Add to Cart" on the product page</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Or tap the cart icon on a product card</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">A confirmation message appears</div></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-number">2</div>
                         <div class="item-content">
-                            <div class="item-title">Stock Validation</div>
-                            <div class="item-text">Stock limits are automatically enforced. You can't add more than what's available.</div>
+                            <div class="item-title">Managing Your Cart</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Increase quantity: tap +</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Decrease quantity: tap –</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Remove item: swipe left or tap X</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Select items: tap the checkbox</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Select all: tap "Select All" at the top</div></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-number">3</div>
                         <div class="item-content">
-                            <div class="item-title">Self-Purchase Prevention</div>
-                            <div class="item-text">You cannot purchase your own products as a seller.</div>
+                            <div class="item-title">Important Notes</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Items from different sellers are grouped separately</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">You cannot purchase your own products</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Stock limits are enforced automatically</div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Section 4: Checkout & Payment -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">💳</div>
@@ -462,26 +516,46 @@
                     <div class="item">
                         <div class="item-number">1</div>
                         <div class="item-content">
-                            <div class="item-title">Cash on Delivery (COD)</div>
-                            <div class="item-text">Pay when the product is delivered.</div>
-                            <div class="item-text">No upfront payment needed.</div>
-                            <div class="item-text">Wait for seller to accept your order.</div>
+                            <div class="item-title">Starting Checkout</div>
+                            <div class="item-text">In your cart, select the items you want.</div>
+                            <div class="item-text">Tap "Checkout".</div>
+                            <div class="item-text">Review the summary grouped by seller.</div>
+                            <div class="item-text">Tap "Start Checkout".</div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-number">2</div>
                         <div class="item-content">
+                            <div class="item-title">Cash on Delivery (COD)</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Pay when the product is delivered</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">No upfront payment needed</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Wait for seller to accept your order</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
                             <div class="item-title">Bank Transfer</div>
                             <div class="item-text">Transfer the amount to the seller's bank account.</div>
                             <div class="item-text">Use your Order ID as the reference.</div>
-                            <div class="item-text">Upload proof of payment.</div>
+                            <div class="item-text">Upload proof of payment (screenshot or photo).</div>
                             <div class="item-text">Wait for seller to verify.</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">4</div>
+                        <div class="item-content">
+                            <div class="item-title">Multi-Seller Orders</div>
+                            <div class="item-bullet"><div class="item-bullet-text">If your cart has items from multiple sellers</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">You'll complete checkout once per seller</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Each order is processed independently</div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Section 5: Order Tracking -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">📦</div>
@@ -494,35 +568,46 @@
                         <div class="item-number">1</div>
                         <div class="item-content">
                             <div class="item-title">Viewing Orders</div>
-                            <div class="item-text">Go to Profile → My Orders.</div>
-                            <div class="item-text">Or tap the receipt icon on the homepage.</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Go to Profile → My Orders</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Or tap the receipt icon on the homepage</div></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-number">2</div>
                         <div class="item-content">
                             <div class="item-title">Order Statuses</div>
-                            <div class="item-bullet"><div class="item-bullet-text">Pending Payment — waiting for payment</div></div>
-                            <div class="item-bullet"><div class="item-bullet-text">Pending Verification — proof uploaded</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Pending Payment — waiting for your payment</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Pending Verification — proof uploaded, awaiting seller</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">Proof Rejected — re-upload needed</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">Waiting for Seller — waiting for seller (COD)</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">Pending Delivery — accepted, waiting for delivery</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">Completed — order delivered</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Cancelled / Declined — order ended</div></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-number">3</div>
                         <div class="item-content">
+                            <div class="item-title">Cancelling an Order</div>
+                            <div class="item-bullet"><div class="item-bullet-text">COD: can cancel if not yet accepted by seller</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Bank Transfer: can cancel in "Pending Payment" or "Proof Rejected"</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Tap "Cancel Order" in order details</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">4</div>
+                        <div class="item-content">
                             <div class="item-title">Re-uploading Payment Proof</div>
-                            <div class="item-text">If rejected, you'll see the reason.</div>
-                            <div class="item-text">Tap "Re-upload Proof".</div>
-                            <div class="item-text">Select a new image and upload.</div>
+                            <div class="item-bullet"><div class="item-bullet-text">If rejected, you'll see the reason</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Tap "Re-upload Proof"</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Select a new image and upload</div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Section 6: Wishlist -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">❤️</div>
@@ -535,7 +620,8 @@
                         <div class="item-number">1</div>
                         <div class="item-content">
                             <div class="item-title">Adding to Wishlist</div>
-                            <div class="item-text">Tap the heart icon on any product. You must be signed in.</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Tap the heart icon on any product</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">You must be signed in</div></div>
                         </div>
                     </div>
                     <div class="item">
@@ -552,10 +638,87 @@
             </div>
         </div>
 
+        <!-- Section 7: Profile & Settings -->
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-header">
+                <div class="section-icon">⚙️</div>
+                <div class="section-title">7. Profile &amp; Settings</div>
+                <div class="section-chevron">▼</div>
+            </div>
+            <div class="section-body">
+                <div class="section-items">
+                    <div class="item">
+                        <div class="item-number">1</div>
+                        <div class="item-content">
+                            <div class="item-title">Editing Profile</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Settings → Edit Profile to change your name</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Name change: once every 24 hours</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">2</div>
+                        <div class="item-content">
+                            <div class="item-title">Contact Details</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Settings → Contact Details</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Update your phone number for deliveries</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
+                            <div class="item-title">Feedback &amp; Support</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Settings → Feedback &amp; Support</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Send feedback, report bugs, attach screenshots</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Or email locomartbn@gmail.com</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 8: Account & Security -->
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-header">
+                <div class="section-icon">🔒</div>
+                <div class="section-title">8. Account &amp; Security</div>
+                <div class="section-chevron">▼</div>
+            </div>
+            <div class="section-body">
+                <div class="section-items">
+                    <div class="item">
+                        <div class="item-number">1</div>
+                        <div class="item-content">
+                            <div class="item-title">Email Verification</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Required for: placing orders, wishlist, seller registration</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Check spam folder if not received</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">2</div>
+                        <div class="item-content">
+                            <div class="item-title">Password Security</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Use a strong password (8+ characters)</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Never share your password</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Sign out on shared devices</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
+                            <div class="item-title">Guest Mode</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Browse products without signing in</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Guest cart merges with your account on sign in</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 9: Troubleshooting -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">🆘</div>
-                <div class="section-title">7. Troubleshooting</div>
+                <div class="section-title">9. Troubleshooting</div>
                 <div class="section-chevron">▼</div>
             </div>
             <div class="section-body">
@@ -577,17 +740,20 @@
         </div>
     </div>
 
+    <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- SELLER GUIDE -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
     <div id="sellerContent" class="hidden">
         <div class="welcome">
             <div class="welcome-content">
-                <div class="welcome-tag">BRUNEI SELLER PATH</div>
-                <div class="welcome-title">Grow Your Business Locally</div>
-                <div class="welcome-subtitle">List products, manage orders, and reach customers across all four Brunei districts.</div>
+                <div class="welcome-tag">SELLER GUIDE</div>
+                <div class="welcome-title">Grow Your Business</div>
+                <div class="welcome-subtitle">List products, manage orders, and reach customers across Brunei.</div>
             </div>
             <div class="welcome-icon">🏪</div>
         </div>
 
+        <!-- Section 1: Becoming a Seller -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">📝</div>
@@ -613,15 +779,24 @@
                             <div class="item-text">Tap "Register Your Business".</div>
                             <div class="item-text">Fill in: Store Name, Category, Contact Number, Description.</div>
                             <div class="item-text">Select Payment Methods (COD and/or Bank Transfer).</div>
-                            <div class="item-text">If Bank Transfer: enter bank details.</div>
-                            <div class="item-text">Accept Terms &amp; Conditions.</div>
+                            <div class="item-text">If Bank Transfer: enter bank name, account holder name, and account number.</div>
+                            <div class="item-text">Accept the Terms &amp; Conditions.</div>
                             <div class="item-text">Tap "Register My Business".</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
+                            <div class="item-title">Accessing Seller Dashboard</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Profile → My Business → Go to Seller Center</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Or tap "Seller Hub" from your profile</div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Section 2: Managing Products -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">📦</div>
@@ -644,6 +819,14 @@
                     <div class="item">
                         <div class="item-number">2</div>
                         <div class="item-content">
+                            <div class="item-title">Viewing Products</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Seller Hub → My Products</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Shows all products (active and inactive)</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
                             <div class="item-title">Product Statuses</div>
                             <div class="item-bullet"><div class="item-bullet-text">Active — visible to buyers</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">Inactive — hidden from buyers</div></div>
@@ -651,12 +834,12 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item-number">3</div>
+                        <div class="item-number">4</div>
                         <div class="item-content">
                             <div class="item-title">Editing &amp; Activating</div>
                             <div class="item-bullet"><div class="item-bullet-text">Edit: tap "Edit" to update details</div></div>
-                            <div class="item-bullet"><div class="item-bullet-text">Deactivate: tap "Deactivate" to hide</div></div>
-                            <div class="item-bullet"><div class="item-bullet-text">Activate: tap "Activate" to show</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Deactivate: tap "Deactivate" to hide from buyers</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Activate: tap "Activate" to make visible again</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">View in Store: see how buyers see it</div></div>
                         </div>
                     </div>
@@ -664,6 +847,7 @@
             </div>
         </div>
 
+        <!-- Section 3: Managing Orders -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">🧾</div>
@@ -675,26 +859,45 @@
                     <div class="item">
                         <div class="item-number">1</div>
                         <div class="item-content">
-                            <div class="item-title">Order Statuses &amp; Actions</div>
-                            <div class="item-bullet"><div class="item-bullet-text">Waiting for Seller → Accept or Decline</div></div>
-                            <div class="item-bullet"><div class="item-bullet-text">Pending Payment → wait for buyer proof</div></div>
-                            <div class="item-bullet"><div class="item-bullet-text">Pending Verification → Confirm or Reject proof</div></div>
-                            <div class="item-bullet"><div class="item-bullet-text">Proof Rejected → wait for re-upload</div></div>
-                            <div class="item-bullet"><div class="item-bullet-text">Pending Delivery → deliver the order</div></div>
-                            <div class="item-bullet"><div class="item-bullet-text">Completed → order finished</div></div>
+                            <div class="item-title">Viewing Orders</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Seller Hub → Seller Orders</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">See all incoming orders with status badges</div></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-number">2</div>
                         <div class="item-content">
+                            <div class="item-title">Order Statuses &amp; Actions</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Waiting for Seller → Accept or Decline</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Pending Payment → wait for buyer proof</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Pending Verification → Confirm or Reject proof</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Proof Rejected → wait for buyer re-upload</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Pending Delivery → deliver the order</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Completed → order finished</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
                             <div class="item-title">Accepting an Order (COD)</div>
-                            <div class="item-text">Open the order. Tap "Accept Order".</div>
+                            <div class="item-text">Open the order.</div>
+                            <div class="item-text">Tap "Accept Order".</div>
                             <div class="item-text">Status becomes "Pending Delivery".</div>
                             <div class="item-text">Deliver the product.</div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item-number">3</div>
+                        <div class="item-number">4</div>
+                        <div class="item-content">
+                            <div class="item-title">Declining an Order</div>
+                            <div class="item-text">Open the order.</div>
+                            <div class="item-text">Tap "Decline Order".</div>
+                            <div class="item-text">Select a reason (Out of stock, Seller unavailable, etc.).</div>
+                            <div class="item-text">Confirm.</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">5</div>
                         <div class="item-content">
                             <div class="item-title">Confirming Payment (Bank Transfer)</div>
                             <div class="item-text">Buyer uploads proof of payment.</div>
@@ -703,10 +906,20 @@
                             <div class="item-text">Or tap "Reject Proof" with a reason.</div>
                         </div>
                     </div>
+                    <div class="item">
+                        <div class="item-number">6</div>
+                        <div class="item-content">
+                            <div class="item-title">Completing an Order</div>
+                            <div class="item-text">After delivery, open the order.</div>
+                            <div class="item-text">Tap "Mark Completed".</div>
+                            <div class="item-text">Status becomes "Completed".</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- Section 4: Store Settings -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">⚙️</div>
@@ -734,14 +947,62 @@
                             <div class="item-text">Logo appears on your store and product pages.</div>
                         </div>
                     </div>
+                    <div class="item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
+                            <div class="item-title">Payment Methods</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Toggle COD on/off</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Toggle Bank Transfer on/off</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">If Bank Transfer: enter bank details</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">4</div>
+                        <div class="item-content">
+                            <div class="item-title">Batch Update</div>
+                            <div class="item-bullet"><div class="item-bullet-text">When you change your Store Name</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">All active products are automatically updated</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Buyers see the new name everywhere</div></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- Section 5: Business Overview -->
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-header">
+                <div class="section-icon">📊</div>
+                <div class="section-title">5. Business Overview</div>
+                <div class="section-chevron">▼</div>
+            </div>
+            <div class="section-body">
+                <div class="section-items">
+                    <div class="item">
+                        <div class="item-number">1</div>
+                        <div class="item-content">
+                            <div class="item-title">Dashboard Stats</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Products Published — total active products</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Orders Received — total orders</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">2</div>
+                        <div class="item-content">
+                            <div class="item-title">Viewing Your Store</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Tap "View My Store" to see your public store page</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Only active products are shown</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 6: Payments & Payouts -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">💰</div>
-                <div class="section-title">5. Payments &amp; Payouts</div>
+                <div class="section-title">6. Payments &amp; Payouts</div>
                 <div class="section-chevron">▼</div>
             </div>
             <div class="section-body">
@@ -764,14 +1025,24 @@
                             <div class="item-text">Confirm payment if valid.</div>
                         </div>
                     </div>
+                    <div class="item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
+                            <div class="item-title">Rejecting Proof</div>
+                            <div class="item-text">Tap "Reject Proof".</div>
+                            <div class="item-text">Select a reason (Payment not received, Incorrect amount, Proof unclear, Wrong reference).</div>
+                            <div class="item-text">Buyer will re-upload.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- Section 7: Seller Rules -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">⚖️</div>
-                <div class="section-title">6. Seller Rules &amp; Policies</div>
+                <div class="section-title">7. Seller Rules</div>
                 <div class="section-chevron">▼</div>
             </div>
             <div class="section-body">
@@ -782,12 +1053,32 @@
                             <div class="item-title">Product Rules</div>
                             <div class="item-bullet"><div class="item-bullet-text">Products must be legal in Brunei</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">No counterfeit products</div></div>
-                            <div class="item-bullet"><div class="item-bullet-text">No prohibited items</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">No prohibited items (weapons, adult content, stolen goods)</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">Accurate descriptions and images required</div></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-number">2</div>
+                        <div class="item-content">
+                            <div class="item-title">Order Rules</div>
+                            <div class="item-bullet"><div class="item-bullet-text">Respond to orders promptly</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Communicate with buyers</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Deliver as promised</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">No cancellations without valid reason</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
+                            <div class="item-title">Account Rules</div>
+                            <div class="item-bullet"><div class="item-bullet-text">No fake accounts</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">No review manipulation</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">No harassment of buyers</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Follow all applicable laws</div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-number">4</div>
                         <div class="item-content">
                             <div class="item-title">Consequences</div>
                             <div class="item-bullet"><div class="item-bullet-text">Listing removal</div></div>
@@ -799,10 +1090,11 @@
             </div>
         </div>
 
+        <!-- Section 8: Troubleshooting -->
         <div class="section" onclick="toggleSection(this)">
             <div class="section-header">
                 <div class="section-icon">🆘</div>
-                <div class="section-title">7. Troubleshooting</div>
+                <div class="section-title">8. Troubleshooting</div>
                 <div class="section-chevron">▼</div>
             </div>
             <div class="section-body">
@@ -811,7 +1103,7 @@
                         <div class="item-number">1</div>
                         <div class="item-content">
                             <div class="item-title">Common Issues</div>
-                            <div class="item-bullet"><div class="item-bullet-text">Can't upload images → check internet</div></div>
+                            <div class="item-bullet"><div class="item-bullet-text">Can't upload images → check internet, try smaller images</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">Product not showing → check if Active</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">Order stuck → check status and take action</div></div>
                             <div class="item-bullet"><div class="item-bullet-text">Payment not received → reject proof with reason</div></div>
